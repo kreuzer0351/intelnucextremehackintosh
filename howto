@@ -1,0 +1,59 @@
+Intel BXNUC9I9QNX NUC 9 Extreme
+
+https://github.com/bemble/Hackintosh-NUC9I7QNX-OpenCore
+Follow steps in here for setting up bios
+
+Bios Settings
+
+First, restore default BIOS config: F9 - Optimal Defaults
+Configuration
+
+Advanced
+USB > Legacy USB Support: Enabled
+
+Security
+Security Features > Intel Platform Trust Technology: Unchecked
+Security Features > Intel Software Guard Extension (SGX): Disabled
+Security Features > Thunderbold Security Level: Legacy mode
+
+Boot
+Secure Boot > Secure Boot: Disabled
+boot Priority > Fast Boot: Unchecked
+boot Priority > Network Boot: Disabled
+boot Priority > Ethernet1 Boot: Unchecked
+boot Priority > Ethernet2 Boot: Unchecked
+
+
+
+Step 1
+Download the latest version of macos from the store.
+MacOs sequoia
+
+Step 2 
+create USB
+Mac OSX extended
+GUI Partition Map
+
+Step 3
+sudo /Applications/Install\ macOS\ Sequoia.app/Contents/Resources/createinstallmedia --volume /Volumes/macinstall151 /Applications/Install\ macOS\ Sequoia.app --nointeraction
+
+Step 4
+Download the efi mounter
+https://github.com/chris1111/MountEFI
+
+Step 5 
+Download the efi folder from this link
+https://github-com.translate.goog/daliansky/Intel-NUC9-Hackintosh?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc
+
+Step 6
+Using efi mount tool add efi folder to newly created USB
+
+Step 7 
+install MAC on intel nuc
+
+Step 8 
+Once installed successfully, use efi mounter to add efi folder to boot disk.
+
+
+
+
